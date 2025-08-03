@@ -1,7 +1,20 @@
 body {
     background-color: #121212;
-    color: #ffffff;
+    color: #E0E0E0; /* Softer white for terminal feel */
     font-family: 'Roboto Mono', monospace;
+}
+
+.navbar-dark .navbar-brand {
+    color: #E0E0E0;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #E0E0E0;
+    transition: color 0.3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-brand:hover {
+    color: #39CCCC;
 }
 
 .hero-section {
@@ -18,6 +31,7 @@ body {
     font-size: 4rem;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: #39CCCC; /* Vibrant cyan accent */
 }
 
 .section-heading {
@@ -25,6 +39,7 @@ body {
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: #39CCCC; /* Vibrant cyan accent */
 }
 
 /* Make text in light sections dark */
@@ -44,11 +59,46 @@ body {
 }
 
 .card .card-title {
-    color: #ffffff;
+    color: #39CCCC; /* Vibrant cyan accent */
 }
 
 .card .card-text {
     color: #a0a0a0;
+}
+
+#expertise h4 {
+    color: #F92672; /* Pink/Magenta for subheadings */
+}
+
+#expertise ul.skills-list li {
+    color: #E6DB74; /* Yellow for list items */
+}
+
+.methodology-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.methodology-list li {
+    margin-bottom: 1.5rem;
+    padding-left: 2.5rem;
+    position: relative;
+}
+
+.methodology-list li::before {
+    content: counter(list-item);
+    counter-increment: list-item;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #F92672;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.methodology-list li strong {
+    color: #39CCCC;
 }
 
 .card:hover {
@@ -56,13 +106,26 @@ body {
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #39CCCC;
+    border-color: #39CCCC;
+    color: #121212; /* Dark text on bright button */
+    font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: #2bb8b8; /* Slightly darker cyan on hover */
+    border-color: #2bb8b8;
+    color: #121212;
+}
+
+#hero .btn-primary {
+    background-color: #F92672;
+    border-color: #F92672;
+}
+
+#hero .btn-primary:hover {
+    background-color: #d81b60;
+    border-color: #d81b60;
 }
 
 /* Adjust contact form for light background */
