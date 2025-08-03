@@ -77,6 +77,7 @@ body {
 .methodology-list {
     list-style: none;
     padding-left: 0;
+    counter-reset: methodology-counter;
 }
 
 .methodology-list li {
@@ -86,8 +87,8 @@ body {
 }
 
 .methodology-list li::before {
-    content: counter(list-item);
-    counter-increment: list-item;
+    content: counter(methodology-counter);
+    counter-increment: methodology-counter;
     position: absolute;
     left: 0;
     top: 0;
@@ -99,6 +100,28 @@ body {
 
 .methodology-list li strong {
     color: #39CCCC;
+}
+
+.methodology-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.methodology-card .card-title {
+    color: #F92672;
+}
+
+.methodology-step-number {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.05);
+    z-index: 0;
 }
 
 .card:hover {
