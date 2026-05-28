@@ -162,3 +162,231 @@ body {
 footer {
     margin-top: 2rem;
 }
+
+/* === Accent nav link (e.g. SEO IA) === */
+.navbar-dark .navbar-nav .nav-link.nav-link-accent {
+    color: #F92672;
+    font-weight: bold;
+}
+.navbar-dark .navbar-nav .nav-link.nav-link-accent:hover {
+    color: #39CCCC;
+}
+
+/* =========================================================
+   Article page (seo-ia.html) — coherent terminal theme
+   ========================================================= */
+.article-hero {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(57, 204, 204, 0.12), transparent 40%),
+        radial-gradient(circle at 80% 0%, rgba(249, 38, 114, 0.12), transparent 45%),
+        #121212;
+    padding: 9rem 0 4rem;
+    border-bottom: 1px solid #333;
+}
+
+.article-hero .eyebrow {
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #F92672;
+    margin-bottom: 1rem;
+}
+
+.article-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #39CCCC;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.article-hero .article-intro {
+    color: #c0c0c0;
+    font-size: 1.1rem;
+    max-width: 760px;
+}
+
+/* Sticky table of contents */
+.toc-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 1.5rem;
+    position: sticky;
+    top: 90px;
+}
+
+.toc-card h2 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #F92672;
+    margin-bottom: 1rem;
+}
+
+.toc-card ol {
+    list-style: none;
+    counter-reset: toc;
+    padding-left: 0;
+    margin: 0;
+}
+
+.toc-card li {
+    counter-increment: toc;
+    margin-bottom: 0.6rem;
+    line-height: 1.3;
+}
+
+.toc-card li a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.toc-card li a::before {
+    content: counter(toc, decimal-leading-zero) ". ";
+    color: #39CCCC;
+    font-weight: bold;
+}
+
+.toc-card li a:hover {
+    color: #39CCCC;
+}
+
+/* Article body */
+.article-body {
+    max-width: 820px;
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+.article-body h2 {
+    color: #39CCCC;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #2a2a2a;
+    scroll-margin-top: 90px;
+}
+
+.article-body h3 {
+    color: #F92672;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.article-body p {
+    color: #d0d0d0;
+    margin-bottom: 1.2rem;
+}
+
+.article-body a {
+    color: #39CCCC;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.article-body a:hover {
+    color: #E6DB74;
+}
+
+.article-body strong {
+    color: #E6DB74;
+}
+
+/* Lead paragraph just under each H1/intro */
+.article-body .lead-paragraph {
+    font-size: 1.15rem;
+    color: #E0E0E0;
+    border-left: 3px solid #F92672;
+    padding-left: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* Comparison table */
+.article-body .table-wrapper {
+    overflow-x: auto;
+    margin: 1.5rem 0 2rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.article-body table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    background-color: #1a1a1a;
+    margin: 0;
+}
+
+.article-body table th {
+    background-color: #1e1e1e;
+    color: #39CCCC;
+    text-align: left;
+    padding: 0.9rem;
+    border-bottom: 2px solid #F92672;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.article-body table td {
+    padding: 0.9rem;
+    border-bottom: 1px solid #2a2a2a;
+    border-right: 1px solid #2a2a2a;
+    color: #c0c0c0;
+    vertical-align: top;
+}
+
+.article-body table td:first-child {
+    color: #E6DB74;
+    font-weight: 500;
+}
+
+.article-body table tr:hover td {
+    background-color: #232323;
+}
+
+/* FAQ block accent */
+.faq-block h3 {
+    background: linear-gradient(90deg, rgba(57, 204, 204, 0.08), transparent);
+    padding: 0.6rem 0.9rem;
+    border-left: 3px solid #39CCCC;
+    border-radius: 4px;
+}
+
+/* End-of-article CTA */
+.article-cta {
+    background:
+        radial-gradient(circle at 80% 50%, rgba(249, 38, 114, 0.15), transparent 50%),
+        #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 14px;
+    padding: 2.5rem;
+    margin: 3.5rem 0 1rem;
+    text-align: center;
+}
+
+.article-cta h2 {
+    border: none;
+    padding: 0;
+    margin-top: 0;
+    color: #39CCCC;
+}
+
+.article-cta p {
+    color: #c0c0c0;
+    max-width: 620px;
+    margin: 0 auto 1.5rem;
+}
+
+@media (max-width: 991px) {
+    .article-hero h1 { font-size: 2.1rem; }
+    .toc-card { position: static; margin-bottom: 2rem; }
+}
