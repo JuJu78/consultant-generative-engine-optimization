@@ -286,13 +286,13 @@ footer {
     margin-bottom: 1.2rem;
 }
 
-.article-body a {
+.article-body a:not(.btn) {
     color: #39CCCC;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
 
-.article-body a:hover {
+.article-body a:not(.btn):hover {
     color: #E6DB74;
 }
 
